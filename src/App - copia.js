@@ -1,6 +1,6 @@
 import React, {Component } from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import './App.css';
 
 // Formas de definir el objeto
 // #1  Función
@@ -15,7 +15,7 @@ import './App.scss';
 
 class Hello extends Component {
   render () {
-    return <h2 className='test-class-style'>{this.props.title}</h2>
+    return <h2>{this.props.title}</h2>
   }
 }
 
