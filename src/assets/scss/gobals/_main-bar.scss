@@ -1,4 +1,37 @@
 .main-bar{
     background-color: red;
-    padding: 0;
+    //padding: 0;
+    .main-bar__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .main-bar__logo{
+            background-color: green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            max-width: 8rem;
+            min-height: 2rem;
+            max-height: 4.5rem;
+            aspect-ratio: 3/2;
+            .logo__image{
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        .main-bar__nav{
+            .nav-list{
+                display: flex;
+                gap: 2rem;
+                .nav-list__item{
+                    .main-bar__link{
+                        
+                    }
+                }
+            }
+        }
+
+    }
+
 }

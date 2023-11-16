@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./assets/scss/styles.scss";
 import Home from './containers/home/Home';
+import SearchMovies from './containers/search-movies/Search-movies';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<Home />} />
+      <Route exact path="/movies" element={<SearchMovies />} />
     </Routes>
   </BrowserRouter>
 );

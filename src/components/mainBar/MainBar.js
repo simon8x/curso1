@@ -6,16 +6,33 @@ function MainBar() {
         <nav className="main-bar">
             <div className="container">
                 <div className="main-bar__wrapper"> 
-                    <div className="main-bar__logo">
+                    <a 
+                    className="main-bar__logo"
+                    href="/"
+                    target= "_self"
+                    >
                         <img 
                             className="logo__image" 
-                            src="../public/assets/images/cool-logo.png"
+                            src="https://cdn-icons-png.flaticon.com/128/1048/1048951.png"
                             alt="logo"
-                        />
+                            />
+                    </a>                    
+                    <div className="main-bar__nav">
+                        <ul className="nav-list">
+                            <li className="nav-list__item">
+                                <a 
+                                className="main-bar__link"
+                                href="/movies"
+                                target= "_self"
+                                >Movies
+                                </a>
+                            </li>
+                            <li className="nav-list__item">ITEM</li>
+                            <li className="nav-list__item">ITEM</li>
+                        </ul>
                     </div>
                 </div>
 
-                <p>MAIN BAR</p>
             </div>
         </nav>
     );
