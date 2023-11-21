@@ -27,8 +27,22 @@ function MainBar() {
                                 >Movies
                                 </a>
                             </li>
-                            <li className="nav-list__item">ITEM</li>
-                            <li className="nav-list__item">ITEM</li>
+                            <li className="nav-list__item">
+                                <a 
+                                className="main-bar__link"
+                                href="/pokemon"
+                                target= "_self"
+                                >Pokemon
+                                </a>
+                            </li>
+                            <li className="nav-list__item">
+                                <a 
+                                className="main-bar__link"
+                                href="/excercises/"
+                                target= "_self"
+                                >Exercises
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

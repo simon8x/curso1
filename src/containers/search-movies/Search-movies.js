@@ -1,27 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import MainBar from "../../components/mainBar/MainBar";
 import Footer from "../../components/footer/Footer";
+import SearchMoviesForm from "../../components/search-movies-form";
 
-const API_KEY = '70a6e4e5'
 
 function SearchMovies() {
-    const [value, setValue] = useState("");
     
-    function handleChange(e) {
-        const { value } = e.target;
-        setValue(value);
-        console.log("contenido ==========> ",value)
+    const API_KEY = '70a6e4e5'
+    const [results, setResults] = useState("");
+    const [value, setValue] = useState("");
+
+    function handleResults(e){
+        alert("VIVA PERON");
+
     }
 
-    function handleSubmitSearch(e) {
-        e.preventDefault()
-        fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`)
-            .then(res => res.json())
-            .then(results => {
-                console.log(results)
-            })
-    }
-    //http://www.omdbapi.com/?i=tt3896198&apikey=70a6e4e5
+
     return(
         <>
         <MainBar />
@@ -33,22 +28,9 @@ function SearchMovies() {
             </header>
             <section className="search-movies">
                 <div className="container">
-                    <div className="search-movies-wrapper">
-                        <form onSubmit={e => handleSubmitSearch(e)} >
-                            <input
-                                className="search-movies__input" 
-                                type="text"
-                                placeholder="type a movie name"
-                                onChange={e => handleChange(e)}
-                                />                                
-                            <button className="search-movies__submit">
-                                find
-                            </button>
-                        </form>
-                    </div>
+                    <SearchMoviesForm onResults={handleResults} API_KEY results setResults value setValue/>
                 </div>
-            </section>
-            
+            </section>            
         </div>
         <Footer />
         </>

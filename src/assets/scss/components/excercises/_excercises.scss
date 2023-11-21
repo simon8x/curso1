@@ -1,0 +1,49 @@
+.exercises-container{
+    background-color: deeppink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1%;
+    .single-excercise{
+        width: 22%;
+        background-color: lemonchiffon;
+        border-radius: 20px;
+        padding: 2% 1%;
+        margin-block: .5rem;
+        .section-title{
+            font-size: 1.2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .controls-wrapper{
+            background-color: seagreen;
+            min-height: 6rem;
+            width: 100%;
+            display: flex;
+            gap: 2%;
+            justify-content: space-between;
+            align-items: center;
+            .control-btn, .result{
+                width: 30%;
+                font-size: 3rem;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        .person-wrapper{
+            width: 100%;
+            display: flex;
+            margin-block: 1rem;
+            gap: 1rem;
+            .person-img{
+                max-width: 25%;
+            }
+            .person-data-wrapper{
+
+            }
+        }
+    }
+
+}
