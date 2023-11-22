@@ -12,17 +12,19 @@ function Excercises(){
             <div className="container">
                 <section className="exercises-container">
 
-                    <SingleExcercise title="props" />
+                    <SingleExcercise title="props" size="x1" />
                 
-                    <SingleExcercise title="json mock" />
+                    <SingleExcercise title="json mock" size="x1" />
                     
-                    <SingleExcercise title="states uses" />
+                    <SingleExcercise title="states uses" size="x1" />
 
-                    <SingleExcercise title="login" />
+                    <SingleExcercise title="login" size="x1" />
 
-                    <SingleExcercise title="list of names" />
+                    <SingleExcercise title="list of names" size="x1" />
 
-                    <SingleExcercise title="ternary" />
+                    <SingleExcercise title="ternary" size="x1" />
+
+                    <SingleExcercise title="to do list" size="x2" />
 
                 </section>
             

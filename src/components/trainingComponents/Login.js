@@ -18,7 +18,7 @@ function Login() {
     function handlePassword(e){
         const value = e.target.value;
         setPasswordState(value);
-        console.log("password: ", passwordState)
+        //console.log("password: ", passwordState)
     }
     function login() {
         if (usernameState === username && passwordState === pass) {
