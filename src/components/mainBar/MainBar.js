@@ -27,14 +27,14 @@ function MainBar() {
                                 >Movies
                                 </a>
                             </li>
-                            <li className="nav-list__item">
+                            {/* <li className="nav-list__item">
                                 <a 
                                 className="main-bar__link"
                                 href="/pokemon"
                                 target= "_self"
                                 >Pokemon
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="nav-list__item">
                                 <a 
                                 className="main-bar__link"
@@ -43,6 +43,23 @@ function MainBar() {
                                 >Exercises
                                 </a>
                             </li>
+                            <li className="nav-list__item">
+                                <a 
+                                className="main-bar__link"
+                                href="/pokedex/"
+                                target= "_self"
+                                >pokedex
+                                </a>
+                            </li>
+                            <li className="nav-list__item">
+                                <a 
+                                className="main-bar__link"
+                                href="/js-excercises/"
+                                target= "_self"
+                                >JsExcercises
+                                </a>
+                            </li>
+                            
                         </ul>
                     </div>
                 </div>

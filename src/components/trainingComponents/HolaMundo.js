@@ -18,7 +18,8 @@ function HolaMundo(){
     });
 
     const searchPokemon = () =>{
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((response)=>{
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`
+        ).then((response)=>{
                 //console.log(response);
                 setPokemon({
                     name: pokemonName, 
@@ -37,7 +38,7 @@ function HolaMundo(){
     }
     return(
         <>  
-            <MainBar/>
+            {/* <MainBar/> */}
             <div className="holamundo-wrapper">
                 {/* <h1>VIVA PERON</h1> */}
                 <section className="input-section">
@@ -60,7 +61,7 @@ function HolaMundo(){
                     }
                 </section>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </>
 
     )

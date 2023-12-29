@@ -12,6 +12,16 @@ function Excercises(){
             <div className="container">
                 <section className="exercises-container">
 
+                    {/* <SingleExcercise title="show image api" size="x2" /> */}
+                    
+                    {/* <SingleExcercise title="crypto currencis" size="x2" /> */}
+
+                    {/* <SingleExcercise title="pokedex" size="x1" /> */}
+
+                    <SingleExcercise title="find a pokemon" size="x1" />
+
+                    <SingleExcercise title="to do list" size="x2" />
+
                     <SingleExcercise title="props" size="x1" />
                 
                     <SingleExcercise title="json mock" size="x1" />
@@ -24,7 +34,7 @@ function Excercises(){
 
                     <SingleExcercise title="ternary" size="x1" />
 
-                    <SingleExcercise title="to do list" size="x2" />
+                    
 
                 </section>
             

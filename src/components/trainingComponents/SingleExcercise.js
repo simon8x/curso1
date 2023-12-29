@@ -7,6 +7,10 @@ import ListOfNames from './ListOfNames';
 import Ternary from './Ternary';
 import Fade from 'react-reveal/Fade';
 import ToDoList from './ToDoList';
+import ShowImageApi from './ShowImageApi';
+import CryptoCurrencis from './CryptoCurrencis';
+import HolaMundo from './HolaMundo';
+// import PokeDex from '../../containers/pokeDex/PokeDex';
 
 function SingleExcercise({title, size}) {
   return (
@@ -18,6 +22,9 @@ function SingleExcercise({title, size}) {
                 </h1>
             </Fade>
             
+            {/* {title === "pokedex" ?<PokeDex/>:(null)} */}
+            {title === "find a pokemon" ?<HolaMundo/>:(null)}
+            {title === "crypto currencis" ?<CryptoCurrencis/>:(null)}
             {title === "props" ?<Props/>:(null)}
             {title === "json mock" ? (<Persons/>):(null)}
             {title === "states uses" ? (<States/>):(null)}
@@ -25,6 +32,7 @@ function SingleExcercise({title, size}) {
             {title === "list of names" ? (<ListOfNames />):(null)}
             {title === "ternary" ? (<Ternary />):(null)}
             {title === "to do list" ? (<ToDoList />):(null)}
+            {title === "show image api" ? (<ShowImageApi />):(null)}
             
             {/* <Persons title={"json mock"} />     */}
         </div>
